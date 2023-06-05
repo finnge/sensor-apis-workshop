@@ -1,0 +1,100 @@
+:root {
+  --ff-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --ff-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-gray-100: #f7f7f7;
+  --color-gray-200: #efefef;
+  --color-gray-300: #ddd;
+  --color-gray-400: #ccc;
+  --color-gray-500: #999;
+  --color-gray-600: #777;
+  --color-gray-700: #555;
+  --color-gray-800: #333;
+  --color-gray-900: #111;
+
+  --color-red-200: #edc1c1;
+  --color-red-300: #e3a0a0;
+  --color-red-400: #d16464;
+  --color-red-600: #c82829;
+
+  --color-orange-200: #f2d4bf;
+  --color-orange-300: #ebbe9e;
+  --color-orange-400:  #de935f;
+  --color-orange-600:  #f4861f;
+
+  --color-green-200: #dce5c2;
+  --color-green-300: #c6d49d;
+  --color-green-400: #a7bd68;
+  --color-green-600: #5d800d;
+
+  --color-light: var(--color-gray-200);
+  --color-background: var(--color-gray-200);
+  --color-border: var(--color-gray-400);
+  --color-text-light: var(--color-gray-600);
+  --color-text: var(--color-gray-900);
+
+  --color-negative-light: var(--color-red-400);
+  --color-negative: var(--color-red-600);
+
+  --color-positive-light: var(--color-green-400);
+  --color-positive: var(--color-green-600);
+
+  --color-notice-light: var(--color-orange-400);
+  --color-notice: var(--color-orange-600);
+}
+
+body {
+  font-family: var(--ff-sans);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+code {
+  font-family: var(--ff-mono);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+  margin: 1em 0;
+}
+
+.card {
+  background-color: var(--color-light);
+  border-radius: 5px;
+  padding: 1em;
+  text-decoration: none;
+  display:flex;
+  flex-direction: column;
+  gap:0.5em;
+}
+
+
+.card img {
+  max-width: 50px;
+}
+
+.card--disabled {
+  background-color: var(--color-negative-light);
+}
+
+.card--enabled {
+  background-color: var(--color-notice-light);
+}
+
+.card--reading {
+  background-color: var(--color-positive-light);
+}
+
+.card__data {
+  word-break: break-all;
+  font-family: var(--ff-mono);
+}

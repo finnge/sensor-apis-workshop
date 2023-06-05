@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello World</h1>
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./index.js" defer></script>
+    <link href="./assets/normilze.css" rel="stylesheet">
+    <link href="./assets/main.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Ambient Light Sensor</h1>
+
+      <div class="card" data-js-feature="AmbientLightSensor">
+        <img src="../assets/sensors_FILL0_wght500_GRAD0_opsz48.svg" alt="https">
+        <span class="card__title">AmbientLightSensor</span>
+        <span class="card__status">Checking...</span>
+        <span class="card__data"></span>
+        <span class="card__time"></span>
+      </div>
+    </main>
+  </body>
+
 </html>
