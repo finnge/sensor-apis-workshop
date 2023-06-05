@@ -4,9 +4,8 @@ In diesem Workshop werden wir uns mit den standardisierten Sensor APIs und deren
 
 ## Voraussetzungen
 
-* Endgerät zum Testen:
-  * Android Smartphone mit Chrome für Android (Version XX oder höher) **ODER**
-  * Android Simulator mit Chrome für Android (Version XX oder höher)
+* Endgerät zum Testen mit Chrome für Android (ab Version 67 bzw. 91)
+  * Zum Überprüfen kann diese Feature-Detection dienen. (Es müssen flags gesetzt werden, um die API zu aktivieren)
 * ngrok CLI installiert und Account angelegt (https://ngrok.com/)
 * Docker installiert (https://www.docker.com/)
 
